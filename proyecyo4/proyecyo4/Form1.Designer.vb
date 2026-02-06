@@ -29,6 +29,9 @@ Partial Class Form1
         Me.Caja2 = New System.Windows.Forms.TextBox()
         Me.Etiqueta3 = New System.Windows.Forms.Label()
         Me.Etiqueta4 = New System.Windows.Forms.Label()
+        Me.Boton1 = New System.Windows.Forms.Button()
+        Me.Boton2 = New System.Windows.Forms.Button()
+        Me.Boton3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Caja1
@@ -50,12 +53,12 @@ Partial Class Form1
         '
         'Boton
         '
-        Me.Boton.Font = New System.Drawing.Font("Romantic", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
+        Me.Boton.Font = New System.Drawing.Font("Romantic", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
         Me.Boton.Location = New System.Drawing.Point(450, 72)
         Me.Boton.Name = "Boton"
         Me.Boton.Size = New System.Drawing.Size(124, 64)
         Me.Boton.TabIndex = 2
-        Me.Boton.Text = "Suma"
+        Me.Boton.Text = "+"
         Me.Boton.UseVisualStyleBackColor = True
         '
         'Etiqueta2
@@ -95,12 +98,45 @@ Partial Class Form1
         Me.Etiqueta4.Size = New System.Drawing.Size(0, 78)
         Me.Etiqueta4.TabIndex = 6
         '
+        'Boton1
+        '
+        Me.Boton1.Font = New System.Drawing.Font("Romantic", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
+        Me.Boton1.Location = New System.Drawing.Point(580, 73)
+        Me.Boton1.Name = "Boton1"
+        Me.Boton1.Size = New System.Drawing.Size(124, 64)
+        Me.Boton1.TabIndex = 7
+        Me.Boton1.Text = "-"
+        Me.Boton1.UseVisualStyleBackColor = True
+        '
+        'Boton2
+        '
+        Me.Boton2.Font = New System.Drawing.Font("Romantic", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
+        Me.Boton2.Location = New System.Drawing.Point(450, 142)
+        Me.Boton2.Name = "Boton2"
+        Me.Boton2.Size = New System.Drawing.Size(124, 64)
+        Me.Boton2.TabIndex = 8
+        Me.Boton2.Text = "x"
+        Me.Boton2.UseVisualStyleBackColor = True
+        '
+        'Boton3
+        '
+        Me.Boton3.Font = New System.Drawing.Font("Romantic", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
+        Me.Boton3.Location = New System.Drawing.Point(580, 142)
+        Me.Boton3.Name = "Boton3"
+        Me.Boton3.Size = New System.Drawing.Size(124, 64)
+        Me.Boton3.TabIndex = 9
+        Me.Boton3.Text = "/"
+        Me.Boton3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
         Me.ClientSize = New System.Drawing.Size(800, 344)
+        Me.Controls.Add(Me.Boton3)
+        Me.Controls.Add(Me.Boton2)
+        Me.Controls.Add(Me.Boton1)
         Me.Controls.Add(Me.Etiqueta4)
         Me.Controls.Add(Me.Etiqueta3)
         Me.Controls.Add(Me.Caja2)
@@ -123,4 +159,7 @@ Partial Class Form1
     Friend WithEvents Caja2 As TextBox
     Friend WithEvents Etiqueta3 As Label
     Friend WithEvents Etiqueta4 As Label
+    Friend WithEvents Boton1 As Button
+    Friend WithEvents Boton2 As Button
+    Friend WithEvents Boton3 As Button
 End Class
